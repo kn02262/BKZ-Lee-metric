@@ -4,6 +4,8 @@ import argparse
 import numpy
 import time
 
+MCalls = 0
+
 def WtLee(x): # Coordinate Lee weight
     F=x.base_ring()
     b=floor(F.cardinality()/4)
@@ -179,7 +181,12 @@ def MW_Codeword_Hamming_fast(B, lee=false):
     B=B.delete_columns(zero_pos)
     C=LinearCode(B)
     if lee == false:
-        p = C._minimum_weight_codeword(algorithm='guava')
+        p=C[0]
+        dw=C.length()
+        for c in C:
+            if c.hamming_weight() != 0 and c.hamming_weight()<dw:
+                dw=c.hamming_weight()
+                p=c
     else:
         p=C[0]
         dw=C.length()
@@ -224,6 +231,7 @@ def MW_Codeword(B, lee=0):
     return p
 
 def bkz(B, beta, preproc=[], lee=0, proj_vector=proj_orthogonal_vector_q):
+    global MCalls;
     # lee=0: hamming bkz
     # lee=1: hamming bkz + lower WtLee codeword selection
     # lee=2: lee bkz (inserting primitive codeword)
@@ -237,6 +245,10 @@ def bkz(B, beta, preproc=[], lee=0, proj_vector=proj_orthogonal_vector_q):
     while i < k - 1:
         j = min(i+beta-1, k-1)
         B_proj = orthogonal_projections(B, i, j, proj_vector)
+        MCalls = MCalls + 1
+        if WtLeeVec(B_proj[0]) == 1:
+            i=i+1
+            continue
         p = MW_Codeword(B_proj, lee)
         if (lee>=2 and WtLeeVec(B_proj[0]) == WtLeeVec(p)) or (lee<=1 and B_proj[0].hamming_weight() == p.hamming_weight()):
             i = i + 1
@@ -287,13 +299,14 @@ parser = argparse.ArgumentParser(description='This script compares efficiency of
 parser.add_argument("-q", required=True, type=int, default=0, help='Finite field cardinality, prime')
 parser.add_argument("-b", required=True, type=int, default=0, help='Beta block size in BKZ')
 parser.add_argument("-s", required=True, type=int, default=10, help='Number of samples')
+parser.add_argument("-n", required=True, type=int, default=0, help='Length of the code')
 args = parser.parse_args()
 beta = args.b
 q = args.q
 samples = args.s
 
 F=GF(q)
-n_set = [32,64,128,256,512,1024]
+n_set = [args.n]
 R=0.5
 
 allstat = []
@@ -312,6 +325,11 @@ for n in n_set:
     T2 = []
     T3 = []
     T4 = []
+    MCalls1 = []
+    MCalls2 = []
+    MCalls3 = []
+    MCalls4 = []
+
     k=int(n*R)
     for s in range(samples):
         while true:
@@ -329,6 +347,7 @@ for n in n_set:
         wtL0.append(WtLeeVec(B[0]))
 
         print(f"\n--- BKZ with beta={beta}, classic ---")
+        MCalls = 0
         t=time.time()
         B_red=bkz(B, beta, [], 0)
         T1.append(time.time()-t)
@@ -338,8 +357,10 @@ for n in n_set:
         print(f"B_red[0].wtH={B_red[0].hamming_weight()}, B_red[0].wtL={WtLeeVec(B_red[0])}")
         wtH1.append(B_red[0].hamming_weight())
         wtL1.append(WtLeeVec(B_red[0]))
+        MCalls1.append(MCalls)
 
         print(f"\n--- BKZ with beta={beta}, selecting lowest lee wt. vec ---")
+        MCalls = 0
         t=time.time()
         B_red1=bkz(B, beta, [], 1)
         T2.append(time.time()-t)
@@ -349,8 +370,10 @@ for n in n_set:
         print(f"B_red1[0].wtH={B_red1[0].hamming_weight()}, B_red1[0].wtL={WtLeeVec(B_red1[0])}")
         wtH2.append(B_red1[0].hamming_weight())
         wtL2.append(WtLeeVec(B_red1[0]))
+        MCalls2.append(MCalls)
 
         print(f"\n--- LeeBKZ with beta={beta}, bkz with minimum_lee_wt_codeword+primitive ---")
+        MCalls = 0
         t=time.time()
         B_red2=bkz(B, beta, [], 2)
         T3.append(time.time()-t)
@@ -360,8 +383,10 @@ for n in n_set:
         print(f"B_red2[0].wtH={B_red2[0].hamming_weight()}, B_red2[0].wtL={WtLeeVec(B_red2[0])}")
         wtH3.append(B_red2[0].hamming_weight())
         wtL3.append(WtLeeVec(B_red2[0]))
+        MCalls3.append(MCalls)
 
         print(f"\n--- LeeBKZ with beta={beta}, bkz with minimum_lee_wt_codeword (may be non-primitive) ---")
+        MCalls = 0
         t=time.time()
         B_red3=bkz(B, beta, [], 3)
         T4.append(time.time()-t)
@@ -371,6 +396,7 @@ for n in n_set:
         print(f"B_red3[0].wtH={B_red3[0].hamming_weight()}, B_red3[0].wtL={WtLeeVec(B_red3[0])}")
         wtH4.append(B_red3[0].hamming_weight())
         wtL4.append(WtLeeVec(B_red3[0]))
+        MCalls4.append(MCalls)
 
     print("\n\n***************************************")
     print(f"******** STATISTICS FOR n={n} ********")
@@ -383,8 +409,8 @@ for n in n_set:
     print("(4) LEEBKZ + minimal Lee wt codeword without primitivity (InsertVector)")
     print(f"Reduced {samples} matrices of size {k}x{n}")
     print(f"(0): wtH[0]={numpy.mean(wtH0)} wtL[0]={numpy.mean(wtL0)}")
-    print(f"(1): wtH[0]={numpy.mean(wtH1)} wtL[0]={numpy.mean(wtL1)} time={numpy.mean(T1)}")
-    print(f"(2): wtH[0]={numpy.mean(wtH2)} wtL[0]={numpy.mean(wtL2)} time={numpy.mean(T2)}")
-    print(f"(3): wtH[0]={numpy.mean(wtH3)} wtL[0]={numpy.mean(wtL3)} time={numpy.mean(T3)}")
-    print(f"(4): wtH[0]={numpy.mean(wtH4)} wtL[0]={numpy.mean(wtL4)} time={numpy.mean(T4)}")
+    print(f"(1): wtH[0]={numpy.mean(wtH1)} wtL[0]={numpy.mean(wtL1)} time={numpy.mean(T1)} MCalls={numpy.mean(MCalls1)}")
+    print(f"(2): wtH[0]={numpy.mean(wtH2)} wtL[0]={numpy.mean(wtL2)} time={numpy.mean(T2)} MCalls={numpy.mean(MCalls2)}")
+    print(f"(3): wtH[0]={numpy.mean(wtH3)} wtL[0]={numpy.mean(wtL3)} time={numpy.mean(T3)} MCalls={numpy.mean(MCalls3)}")
+    print(f"(4): wtH[0]={numpy.mean(wtH4)} wtL[0]={numpy.mean(wtL4)} time={numpy.mean(T4)} MCalls={numpy.mean(MCalls4)}")
     #allstat.append([wtH0, wtH1, wtH2, wtH3, wtH4, wtL0, wtL1, wtL2, wtL3, wtL4])
