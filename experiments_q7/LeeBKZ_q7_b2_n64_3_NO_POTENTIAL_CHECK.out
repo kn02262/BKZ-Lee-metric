@@ -1,0 +1,102 @@
+RANDOM_SEED=2
+
+profile: [33, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+33<=B[0].wtL<=99
+B[0].wtH=33, B[0].wtL=67
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+profile after BKZ: [28, 4, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+28<=B_red[0].wtL<=84
+B_red[0].wtH=28, B_red[0].wtL=49
+
+profile: [28, 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+28<=B[0].wtL<=84
+B[0].wtH=28, B[0].wtL=50
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+profile after BKZ: [26, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+26<=B_red[0].wtL<=78
+B_red[0].wtH=26, B_red[0].wtL=49
+
+profile: [29, 4, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+29<=B[0].wtL<=87
+B[0].wtH=29, B[0].wtL=58
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+profile after BKZ: [23, 8, 3, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+23<=B_red[0].wtL<=69
+B_red[0].wtH=23, B_red[0].wtL=45
+
+profile: [30, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+30<=B[0].wtL<=90
+B[0].wtH=30, B[0].wtL=56
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+profile after BKZ: [24, 9, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+24<=B_red[0].wtL<=72
+B_red[0].wtH=24, B_red[0].wtL=43
+
+profile: [29, 4, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+29<=B[0].wtL<=87
+B[0].wtH=29, B[0].wtL=61
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+profile after BKZ: [24, 10, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+24<=B_red[0].wtL<=72
+B_red[0].wtH=24, B_red[0].wtL=39
+
+profile: [30, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+30<=B[0].wtL<=90
+B[0].wtH=30, B[0].wtL=58
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+profile after BKZ: [26, 5, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+26<=B_red[0].wtL<=78
+B_red[0].wtH=26, B_red[0].wtL=45
+
+profile: [28, 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+28<=B[0].wtL<=84
+B[0].wtH=28, B[0].wtL=59
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+profile after BKZ: [25, 7, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+25<=B_red[0].wtL<=75
+B_red[0].wtH=25, B_red[0].wtL=43
+
+profile: [31, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+31<=B[0].wtL<=93
+B[0].wtH=31, B[0].wtL=56
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+profile after BKZ: [27, 5, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+27<=B_red[0].wtL<=81
+B_red[0].wtH=27, B_red[0].wtL=44
+
+profile: [30, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+30<=B[0].wtL<=90
+B[0].wtH=30, B[0].wtL=64
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+profile after BKZ: [30, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+30<=B_red[0].wtL<=90
+B_red[0].wtH=30, B_red[0].wtL=45
+
+profile: [26, 6, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+26<=B[0].wtL<=78
+B[0].wtH=26, B[0].wtL=54
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+profile after BKZ: [27, 6, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+27<=B_red[0].wtL<=81
+B_red[0].wtH=27, B_red[0].wtL=45
+
+
+****************************************************
+******** STATISTICS OVER N=10 samples ********
+****************************************************
+Reduced 10 matrices of size 32x64 over F7
+Proper basis wtH[0]=29.4 wtL[0]=58.3
+Reduced basis wtH[0]=26.0 wtL[0]=44.7
+Avg.time=0.20901193618774414
+Avg.Mw_codeword.calls=39.0
+Avg.potential_growth_fails=0.0

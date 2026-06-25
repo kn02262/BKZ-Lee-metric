@@ -1,0 +1,101 @@
+RANDOM_SEED=1
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=409
+
+--- BKZ with beta=3, selecting lowest lee wt. vec ---
+profile after BKZ: [15, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+15<=B_red[0].wtL<=945
+B_red[0].wtH=15, B_red[0].wtL=254
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=577
+
+--- BKZ with beta=3, selecting lowest lee wt. vec ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=318
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=624
+
+--- BKZ with beta=3, selecting lowest lee wt. vec ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=297
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=386
+
+--- BKZ with beta=3, selecting lowest lee wt. vec ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=290
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=542
+
+--- BKZ with beta=3, selecting lowest lee wt. vec ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=248
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=490
+
+--- BKZ with beta=3, selecting lowest lee wt. vec ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=279
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=397
+
+--- BKZ with beta=3, selecting lowest lee wt. vec ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=310
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=635
+
+--- BKZ with beta=3, selecting lowest lee wt. vec ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=240
+
+profile: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B[0].wtL<=1008
+B[0].wtH=16, B[0].wtL=631
+
+--- BKZ with beta=3, selecting lowest lee wt. vec ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=631
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=484
+
+--- BKZ with beta=3, selecting lowest lee wt. vec ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=285
+
+
+****************************************************
+******** STATISTICS OVER N=10 samples ********
+****************************************************
+Reduced 10 matrices of size 16x32 over F127
+Proper basis wtH[0]=16.9 wtL[0]=517.5
+Reduced basis wtH[0]=15.9 wtL[0]=315.2
+Avg.time=148.68588240146636
+Avg.Mw_codeword.calls=16.1

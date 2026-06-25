@@ -1,0 +1,101 @@
+RANDOM_SEED=1
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=409
+
+--- BKZ with beta=3, classic ---
+profile after BKZ: [15, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+15<=B_red[0].wtL<=945
+B_red[0].wtH=15, B_red[0].wtL=498
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=577
+
+--- BKZ with beta=3, classic ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=539
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=624
+
+--- BKZ with beta=3, classic ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=630
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=386
+
+--- BKZ with beta=3, classic ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=610
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=542
+
+--- BKZ with beta=3, classic ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=504
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=490
+
+--- BKZ with beta=3, classic ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=486
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=397
+
+--- BKZ with beta=3, classic ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=473
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=635
+
+--- BKZ with beta=3, classic ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=455
+
+profile: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B[0].wtL<=1008
+B[0].wtH=16, B[0].wtL=631
+
+--- BKZ with beta=3, classic ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=631
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=484
+
+--- BKZ with beta=3, classic ---
+profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B_red[0].wtL<=1008
+B_red[0].wtH=16, B_red[0].wtL=434
+
+
+****************************************************
+******** STATISTICS OVER N=10 samples ********
+****************************************************
+Reduced 10 matrices of size 16x32 over F127
+Proper basis wtH[0]=16.9 wtL[0]=517.5
+Reduced basis wtH[0]=15.9 wtL[0]=526.0
+Avg.time=83.66540923118592
+Avg.Mw_codeword.calls=16.1

@@ -1,0 +1,110 @@
+RANDOM_SEED=1
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=409
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+LLL Potential growth!
+profile after BKZ: [18, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+18<=B_red[0].wtL<=1134
+B_red[0].wtH=18, B_red[0].wtL=311
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=577
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+LLL Potential growth!
+profile after BKZ: [18, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+18<=B_red[0].wtL<=1134
+B_red[0].wtH=18, B_red[0].wtL=313
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=624
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+LLL Potential growth!
+profile after BKZ: [18, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+18<=B_red[0].wtL<=1134
+B_red[0].wtH=18, B_red[0].wtL=294
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=386
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+LLL Potential growth!
+profile after BKZ: [18, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+18<=B_red[0].wtL<=1134
+B_red[0].wtH=18, B_red[0].wtL=322
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=542
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+profile after BKZ: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B_red[0].wtL<=1071
+B_red[0].wtH=17, B_red[0].wtL=296
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=490
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+LLL Potential growth!
+profile after BKZ: [18, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+18<=B_red[0].wtL<=1134
+B_red[0].wtH=18, B_red[0].wtL=276
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=397
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+profile after BKZ: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B_red[0].wtL<=1071
+B_red[0].wtH=17, B_red[0].wtL=263
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=635
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+LLL Potential growth!
+profile after BKZ: [18, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+18<=B_red[0].wtL<=1134
+B_red[0].wtH=18, B_red[0].wtL=283
+
+profile: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+16<=B[0].wtL<=1008
+B[0].wtH=16, B[0].wtL=631
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+LLL Potential growth!
+profile after BKZ: [18, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+18<=B_red[0].wtL<=1134
+B_red[0].wtH=18, B_red[0].wtL=308
+
+profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+17<=B[0].wtL<=1071
+B[0].wtH=17, B[0].wtL=484
+
+--- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+LLL Potential growth!
+profile after BKZ: [18, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+18<=B_red[0].wtL<=1134
+B_red[0].wtH=18, B_red[0].wtL=266
+
+
+****************************************************
+******** STATISTICS OVER N=10 samples ********
+****************************************************
+Reduced 10 matrices of size 16x32 over F127
+Proper basis wtH[0]=16.9 wtL[0]=517.5
+Reduced basis wtH[0]=17.8 wtL[0]=293.2
+Avg.time=1.7853764057159425
+Avg.Mw_codeword.calls=16.4
+Avg.potential_growth_fails=0.8
