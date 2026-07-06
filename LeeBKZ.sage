@@ -1,5 +1,6 @@
 #load("../LEE.sage")
 from LEE import *
+from bkz import *
 import sys
 import argparse
 import numpy
@@ -72,7 +73,12 @@ for s in range(samples):
     print(alg_caption_string)
     STAT=[0,0]
     t=time.time()
-    B_red=bkz(B, beta, [], args.algorithm, args.ignore_potential_growth, STAT)
+    if (args.algorithm == 0) or (args.algorithm == 1):
+        B_red=bkz(B, beta, args.algorithm, verbose=args.verbose, STAT=STAT)
+    elif (args.algorithm == 2):
+        B_red=LEEbkz(B, beta, primitive=True, verbose=args.verbose, ignore_potential=args.ignore_potential_growth, STAT=STAT)
+    elif (args.algorithm == 3):
+        B_red=LEEbkz(B, beta, primitive=False, verbose=args.verbose, ignore_potential=args.ignore_potential_growth, STAT=STAT)
     T.append(time.time()-t)
     B_red_profile = ell_profile(B_red)
     print(f"profile after BKZ: {B_red_profile}")

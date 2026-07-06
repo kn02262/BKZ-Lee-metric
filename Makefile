@@ -51,7 +51,7 @@ CC=gcc -shared -pthread -fPIC -fwrapv -g -O2 -Wall -fno-strict-aliasing \
 	   $(SAGE_INCLUDES)
 
 all: \
-LEE.so
+LEE.so sepi.so bkz.so
 
 LEE.so: LEE.c
 	$(CC) -o LEE.so LEE.c
@@ -65,6 +65,32 @@ LEE.pyx: LEE.sage.py
 LEE.sage.py: LEE.sage
 	$(SAGE) -preparse LEE.sage
 
+sepi.so: sepi.c
+	$(CC) -o sepi.so sepi.c
+
+sepi.c: sepi.pyx
+	$(CYTHON) -3 sepi.pyx
+
+sepi.pyx: sepi.sage.py
+	cp sepi.sage.py sepi.pyx
+
+sepi.sage.py: sepi.sage
+	$(SAGE) --preparse sepi.sage
+
+bkz.so: bkz.c
+	$(CC) -o bkz.so bkz.c
+
+bkz.c: bkz.pyx
+	$(CYTHON) -3 bkz.pyx
+
+bkz.pyx: bkz.sage.py
+	cp bkz.sage.py bkz.pyx
+
+bkz.sage.py: bkz.sage
+	$(SAGE) --preparse bkz.sage
+
 clean:
 	rm -f LEE.so LEE.c LEE.pyx
+	rm -f sepi.so sepi.c sepi.pyx
+	rm -f bkz.so bkz.c bkz.pyx
 	rm -f *.sage.py
