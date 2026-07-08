@@ -23,7 +23,7 @@ profile: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 B[0].wtH=16, B[0].wtL=58
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-profile after BKZ: [11, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+profile after BKZ: [11, 8, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 11<=B_red[0].wtL<=55
 B_red[0].wtH=11, B_red[0].wtL=24
 
@@ -32,7 +32,7 @@ profile: [15, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 B[0].wtH=15, B[0].wtL=44
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-profile after BKZ: [12, 5, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+profile after BKZ: [12, 5, 3, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 12<=B_red[0].wtL<=60
 B_red[0].wtH=12, B_red[0].wtL=32
 
@@ -97,6 +97,6 @@ B_red[0].wtH=13, B_red[0].wtL=29
 Reduced 10 matrices of size 16x32 over F11
 Proper basis wtH[0]=15.4 wtL[0]=44.0
 Reduced basis wtH[0]=14.3 wtL[0]=31.1
-Avg.time=0.10108976364135742
-Avg.Mw_codeword.calls=27.6
+Avg.time=0.0642246961593628
+Avg.Mw_codeword.calls=8.2
 Avg.potential_growth_fails=0.0

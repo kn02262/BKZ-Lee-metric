@@ -5,7 +5,6 @@ profile: [64, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 B[0].wtH=64, B[0].wtL=2052
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-LLL Potential growth!
 profile after BKZ: [66, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 66<=B_red[0].wtL<=4158
 B_red[0].wtH=66, B_red[0].wtL=1493
@@ -15,7 +14,6 @@ profile: [64, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 B[0].wtH=64, B[0].wtL=2025
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-LLL Potential growth!
 profile after BKZ: [66, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 66<=B_red[0].wtL<=4158
 B_red[0].wtH=66, B_red[0].wtL=1560
@@ -25,7 +23,6 @@ profile: [64, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 B[0].wtH=64, B[0].wtL=2099
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-LLL Potential growth!
 profile after BKZ: [66, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 66<=B_red[0].wtL<=4158
 B_red[0].wtH=66, B_red[0].wtL=1575
@@ -35,8 +32,6 @@ profile: [63, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 B[0].wtH=63, B[0].wtL=1947
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-LLL Potential growth!
-LLL Potential growth!
 profile after BKZ: [64, 3, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 64<=B_red[0].wtL<=4032
 B_red[0].wtH=64, B_red[0].wtL=1552
@@ -55,7 +50,6 @@ profile: [65, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 B[0].wtH=65, B[0].wtL=2033
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-LLL Potential growth!
 profile after BKZ: [66, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 66<=B_red[0].wtL<=4158
 B_red[0].wtH=66, B_red[0].wtL=1569
@@ -65,7 +59,6 @@ profile: [64, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 B[0].wtH=64, B[0].wtL=2043
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-LLL Potential growth!
 profile after BKZ: [63, 4, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 63<=B_red[0].wtL<=3969
 B_red[0].wtH=63, B_red[0].wtL=1474
@@ -84,7 +77,6 @@ profile: [65, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 B[0].wtH=65, B[0].wtL=2061
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-LLL Potential growth!
 profile after BKZ: [66, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 66<=B_red[0].wtL<=4158
 B_red[0].wtH=66, B_red[0].wtL=1488
@@ -94,7 +86,6 @@ profile: [64, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 B[0].wtH=64, B[0].wtL=1983
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-LLL Potential growth!
 profile after BKZ: [63, 4, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 63<=B_red[0].wtL<=3969
 B_red[0].wtH=63, B_red[0].wtL=1497
@@ -106,6 +97,6 @@ B_red[0].wtH=63, B_red[0].wtL=1497
 Reduced 10 matrices of size 64x128 over F127
 Proper basis wtH[0]=64.2 wtL[0]=2025.4
 Reduced basis wtH[0]=65.0 wtL[0]=1526.5
-Avg.time=9.305617213249207
-Avg.Mw_codeword.calls=65.8
+Avg.time=3.880929780006409
+Avg.Mw_codeword.calls=3.6
 Avg.potential_growth_fails=0.9

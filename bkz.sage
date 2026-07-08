@@ -243,6 +243,7 @@ def MW_Codeword_Hamming_fast(B, lee=0):
 
 def MW_Codeword_LEE(B, primitive=False):
     if B.rank() == 0:
+        F=B.base_ring()
         p = zero_vector(F, B.ncols())
     else:
         C=LEE.LinearLeeMetricCode(B)

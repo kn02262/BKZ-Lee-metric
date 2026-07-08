@@ -5,7 +5,6 @@ profile: [29, 4, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 B[0].wtH=29, B[0].wtL=82
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-LLL Potential growth!
 profile after BKZ: [26, 7, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 26<=B_red[0].wtL<=130
 B_red[0].wtH=26, B_red[0].wtL=67
@@ -15,8 +14,6 @@ profile: [29, 4, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 B[0].wtH=29, B[0].wtL=100
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-LLL Potential growth!
-LLL Potential growth!
 profile after BKZ: [29, 4, 3, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 29<=B_red[0].wtL<=145
 B_red[0].wtH=29, B_red[0].wtL=71
@@ -35,7 +32,6 @@ profile: [31, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 B[0].wtH=31, B[0].wtL=79
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-LLL Potential growth!
 profile after BKZ: [31, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 31<=B_red[0].wtL<=155
 B_red[0].wtH=31, B_red[0].wtL=79
@@ -45,8 +41,6 @@ profile: [29, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 B[0].wtH=29, B[0].wtL=99
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-LLL Potential growth!
-LLL Potential growth!
 profile after BKZ: [29, 4, 3, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 29<=B_red[0].wtL<=145
 B_red[0].wtH=29, B_red[0].wtL=73
@@ -65,7 +59,6 @@ profile: [29, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 B[0].wtH=29, B[0].wtL=75
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-LLL Potential growth!
 profile after BKZ: [31, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 31<=B_red[0].wtL<=155
 B_red[0].wtH=31, B_red[0].wtL=65
@@ -75,8 +68,6 @@ profile: [30, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 B[0].wtH=30, B[0].wtL=82
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-LLL Potential growth!
-LLL Potential growth!
 profile after BKZ: [30, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 30<=B_red[0].wtL<=150
 B_red[0].wtH=30, B_red[0].wtL=82
@@ -86,7 +77,6 @@ profile: [31, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 B[0].wtH=31, B[0].wtL=99
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-LLL Potential growth!
 profile after BKZ: [30, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 30<=B_red[0].wtL<=150
 B_red[0].wtH=30, B_red[0].wtL=77
@@ -107,6 +97,6 @@ B_red[0].wtH=31, B_red[0].wtL=78
 Reduced 10 matrices of size 32x64 over F11
 Proper basis wtH[0]=29.8 wtL[0]=87.0
 Reduced basis wtH[0]=29.3 wtL[0]=72.9
-Avg.time=0.2118915557861328
-Avg.Mw_codeword.calls=35.6
+Avg.time=0.15334563255310057
+Avg.Mw_codeword.calls=6.3
 Avg.potential_growth_fails=1.0

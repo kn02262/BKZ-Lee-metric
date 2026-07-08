@@ -5,7 +5,7 @@ profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 B[0].wtH=17, B[0].wtL=409
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-profile after BKZ: [19, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0]
+profile after BKZ: [19, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 19<=B_red[0].wtL<=1197
 B_red[0].wtH=19, B_red[0].wtL=304
 
@@ -14,7 +14,7 @@ profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 B[0].wtH=17, B[0].wtL=577
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-profile after BKZ: [18, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+profile after BKZ: [18, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 18<=B_red[0].wtL<=1134
 B_red[0].wtH=18, B_red[0].wtL=311
 
@@ -23,7 +23,7 @@ profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 B[0].wtH=17, B[0].wtL=624
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-profile after BKZ: [18, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+profile after BKZ: [18, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 18<=B_red[0].wtL<=1134
 B_red[0].wtH=18, B_red[0].wtL=294
 
@@ -50,7 +50,7 @@ profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 B[0].wtH=17, B[0].wtL=490
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-profile after BKZ: [18, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+profile after BKZ: [18, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 18<=B_red[0].wtL<=1134
 B_red[0].wtH=18, B_red[0].wtL=276
 
@@ -68,7 +68,7 @@ profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 B[0].wtH=17, B[0].wtL=635
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-profile after BKZ: [18, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+profile after BKZ: [18, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 18<=B_red[0].wtL<=1134
 B_red[0].wtH=18, B_red[0].wtL=283
 
@@ -77,7 +77,7 @@ profile: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 B[0].wtH=16, B[0].wtL=631
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-profile after BKZ: [18, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+profile after BKZ: [18, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 18<=B_red[0].wtL<=1134
 B_red[0].wtH=18, B_red[0].wtL=308
 
@@ -86,7 +86,7 @@ profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 B[0].wtH=17, B[0].wtL=484
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-profile after BKZ: [18, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+profile after BKZ: [18, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 18<=B_red[0].wtL<=1134
 B_red[0].wtH=18, B_red[0].wtL=266
 
@@ -97,6 +97,6 @@ B_red[0].wtH=18, B_red[0].wtL=266
 Reduced 10 matrices of size 16x32 over F127
 Proper basis wtH[0]=16.9 wtL[0]=517.5
 Reduced basis wtH[0]=17.7 wtL[0]=289.1
-Avg.time=3.0082101821899414
-Avg.Mw_codeword.calls=39.7
+Avg.time=1.4323513746261596
+Avg.Mw_codeword.calls=4.1
 Avg.potential_growth_fails=0.0
