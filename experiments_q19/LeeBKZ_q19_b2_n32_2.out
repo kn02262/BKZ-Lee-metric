@@ -1,92 +1,112 @@
 RANDOM_SEED=1
 
-profile: [15, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile: [15, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile: [69, 13, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 15<=B[0].wtL<=135
 B[0].wtH=15, B[0].wtL=69
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword+primitive ---
-profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [51, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 16<=B_red[0].wtL<=144
 B_red[0].wtH=16, B_red[0].wtL=51
 
-profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile: [74, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 17<=B[0].wtL<=153
 B[0].wtH=17, B[0].wtL=74
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword+primitive ---
-profile after BKZ: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile after BKZ: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [63, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 17<=B_red[0].wtL<=153
 B_red[0].wtH=17, B_red[0].wtL=63
 
-profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile: [95, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 17<=B[0].wtL<=153
 B[0].wtH=17, B[0].wtL=95
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword+primitive ---
-profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [57, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 16<=B_red[0].wtL<=144
 B_red[0].wtH=16, B_red[0].wtL=57
 
-profile: [15, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile: [15, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile: [74, 9, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 15<=B[0].wtL<=135
 B[0].wtH=15, B[0].wtL=74
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword+primitive ---
-profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [64, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 16<=B_red[0].wtL<=144
 B_red[0].wtH=16, B_red[0].wtL=64
 
-profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile: [72, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 17<=B[0].wtL<=153
 B[0].wtH=17, B[0].wtL=72
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword+primitive ---
-profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [59, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 16<=B_red[0].wtL<=144
 B_red[0].wtH=16, B_red[0].wtL=59
 
-profile: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile: [59, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 16<=B[0].wtL<=144
 B[0].wtH=16, B[0].wtL=59
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword+primitive ---
-profile after BKZ: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile after BKZ: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [56, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 17<=B_red[0].wtL<=153
 B_red[0].wtH=17, B_red[0].wtL=56
 
-profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile: [83, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 17<=B[0].wtL<=153
 B[0].wtH=17, B[0].wtL=83
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword+primitive ---
-profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [55, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 16<=B_red[0].wtL<=144
 B_red[0].wtH=16, B_red[0].wtL=55
 
-profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile: [92, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 17<=B[0].wtL<=153
 B[0].wtH=17, B[0].wtL=92
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword+primitive ---
-profile after BKZ: [15, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile after BKZ: [15, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [55, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 15<=B_red[0].wtL<=135
 B_red[0].wtH=15, B_red[0].wtL=55
 
-profile: [15, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile: [15, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile: [78, 15, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 15<=B[0].wtL<=135
 B[0].wtH=15, B[0].wtL=78
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword+primitive ---
-profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [61, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 16<=B_red[0].wtL<=144
 B_red[0].wtH=16, B_red[0].wtL=61
 
-profile: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile: [66, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 16<=B[0].wtL<=144
 B[0].wtH=16, B[0].wtL=66
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword+primitive ---
-profile after BKZ: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Hamming profile after BKZ: [17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [65, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 17<=B_red[0].wtL<=153
 B_red[0].wtH=17, B_red[0].wtL=65
 
@@ -97,6 +117,6 @@ B_red[0].wtH=17, B_red[0].wtL=65
 Reduced 10 matrices of size 16x32 over F19
 Proper basis wtH[0]=16.2 wtL[0]=76.2
 Reduced basis wtH[0]=16.2 wtL[0]=58.6
-Avg.time=0.06972179412841797
+Avg.time=0.06991348266601563
 Avg.Mw_codeword.calls=3.1
 Avg.potential_growth_fails=0.0

@@ -310,9 +310,7 @@ def LEEbkz(B, beta, primitive=False, verbose=True, ignore_potential=True, STAT=[
         B_epi = epipodal_matrix(B)
         li = LEE.WtLeeVec(B_epi[i])
         li1 = LEE.WtLeeVec(B_epi[i+1])
-        if LEE.WtLeeVec(B_proj[0]) == LEE.WtLeeVec(p):
-            i = i + 1
-        else:
+        if (LEE.WtLeeVec(B_proj[0]) > LEE.WtLeeVec(p) or LEE.WtLeeVec(B_proj[0]) == 0) and (LEE.WtLeeVec(p) > 0):
             lprint(verbose, f"i = {i}, new Lee weight: {LEE.WtLeeVec(p)}", flush=True)
             if i == 0:
                 lprint(verbose, f"codeword = {p}", flush=True)
@@ -336,6 +334,8 @@ def LEEbkz(B, beta, primitive=False, verbose=True, ignore_potential=True, STAT=[
                 i += 1 # prevent double calculation for first block
             else:
                 i = max(0, i-beta+1)
+        else:
+            i += 1
     return B
 
 def detect_tail(B, i, verbose=False):
@@ -409,7 +409,7 @@ def epipodal_matrix_np_bitwise(B, partial=None):
 def ell(B, i):
     return epipodal_vector(B, i).hamming_weight()
 
-def ell_profile(B):
+def ell_profile(B, lee=False):
     if B.base_ring() == GF(2):
         B_epi = epipodal_matrix_np_bitwise(B)
         #t = walltime()
@@ -420,7 +420,10 @@ def ell_profile(B):
         #print(f"[ell_profile:epipodal_matrix_np:{walltime() - t}]")
     else:
         B_epi = epipodal_matrix(B)
-    return [B_epi[i].hamming_weight() for i in range(B.nrows())]
+    if lee==True:
+        return [LEE.WtLeeVec(B_epi[i]) for i in range(B.nrows())]
+    else:
+        return [B_epi[i].hamming_weight() for i in range(B.nrows())]
     #return [epipodal_vector(B, i).hamming_weight() for i in range(B.nrows())]
 
 def get_k1(ells):

@@ -7,7 +7,7 @@ def parse_ln(ln):
 			ln_list.append(F(s))
 	return ln_list
 
-q=7
+q=127
 b=3
 H=[]
 L=[]
@@ -111,6 +111,7 @@ for n in n_list:
 	MW_Calls.append(MW_Calls_row)
 
 # Output stats to terminal
+print(f"q={q}, b={b}")
 print("Lee:")
 i=0
 for n in n_list:
