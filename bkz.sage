@@ -287,7 +287,55 @@ def bkz(B, beta, lee=0, verbose=True, STAT=[0,0]):
                 i = max(0, i-beta+1)
     return B
 
-def LEEbkz(B, beta, primitive=False, verbose=True, ignore_potential=True, STAT=[0,0]):
+def LEELLL(B, beta, verbose=True, STAT=[0,0]):
+
+    # STAT[0] = Number of minimum_weight_codeword() calls;
+    # STAT[1] = Number of fails due to potential function growth in LLL
+
+    k = B.nrows()
+    assert 2 <= beta and beta <= k
+    S_epi = sepi.S_aux(B)
+    i = 0
+    while i < k - 1:
+        lprint(verbose, f"i = {i}", flush=True)
+        j = min(i+beta-1, k-1)
+        B_proj = orthogonal_projections(B, i, j, S_epi)
+
+        if LEE.WtLeeVec(B_proj[0]) == 1:
+            i = detect_tail_LEE(B, i, verbose=verbose)
+            continue
+
+        p = MW_Codeword_LEE(B_proj, primitive=False)
+        STAT[0] = STAT[0]+1
+        B_epi = epipodal_matrix(B)
+        li = LEE.WtLeeVec(B_epi[i])
+        li1 = LEE.WtLeeVec(B_epi[i+1])
+        if (LEE.WtLeeVec(B_proj[0]) > LEE.WtLeeVec(p) or LEE.WtLeeVec(B_proj[0]) == 0) and (LEE.WtLeeVec(p) > 0):
+            lprint(verbose, f"i = {i}, new Lee weight: {LEE.WtLeeVec(p)}", flush=True)
+            if i == 0:
+                lprint(verbose, f"codeword = {p}", flush=True)
+            A = insert_vector(B_proj, p)
+            T = block_diagonal_matrix(identity_matrix(i), A, identity_matrix(k-j-1))
+            E = T * B
+            E_epi = epipodal_matrix(E)
+            lip1 = LEE.WtLeeVec(E_epi[i+1])
+            if (li-LEE.WtLeeVec(E_epi[i])+li1-lip1 < 1): # lip1 = LEE.WtLeeVec(epipodal_vector(E, i+1))
+                lprint(verbose, "LLL Potential growth!")
+                STAT[1] = STAT[1] + 1
+                i=i+1
+                continue
+            B = E
+            S_epi.set_pos(i)
+            if i == 0:
+                i += 1 # prevent the first block to be double reduced
+            else:
+                i = max(0, i-beta+1)
+        else:
+            i += 1
+    return B
+
+
+def LEEbkz(B, beta, primitive=False, verbose=True, STAT=[0,0]):
 
     # STAT[0] = Number of minimum_weight_codeword() calls;
     # STAT[1] = Number of fails due to potential function growth in LLL
@@ -310,7 +358,7 @@ def LEEbkz(B, beta, primitive=False, verbose=True, ignore_potential=True, STAT=[
         B_epi = epipodal_matrix(B)
         li = LEE.WtLeeVec(B_epi[i])
         li1 = LEE.WtLeeVec(B_epi[i+1])
-        if (LEE.WtLeeVec(B_proj[0]) > LEE.WtLeeVec(p) or LEE.WtLeeVec(B_proj[0]) == 0) and (LEE.WtLeeVec(p) > 0):
+        if (LEE.WtLeeVec(B_proj[0]) > LEE.WtLeeVec(p)) and (LEE.WtLeeVec(p) > 0):
             lprint(verbose, f"i = {i}, new Lee weight: {LEE.WtLeeVec(p)}", flush=True)
             if i == 0:
                 lprint(verbose, f"codeword = {p}", flush=True)
@@ -319,19 +367,18 @@ def LEEbkz(B, beta, primitive=False, verbose=True, ignore_potential=True, STAT=[
             else:
                 A = insert_vector(B_proj, p)
             T = block_diagonal_matrix(identity_matrix(i), A, identity_matrix(k-j-1))
-            E = T * B
-            if (primitive==False) and (not ignore_potential):
-                E_epi = epipodal_matrix(E)
-                lip1 = LEE.WtLeeVec(E_epi[i+1])
-                if (li-LEE.WtLeeVec(E_epi[i])+li1-lip1 < 1): # lip1 = LEE.WtLeeVec(epipodal_vector(E, i+1))
-                    lprint(verbose, "LLL Potential growth!")
-                    STAT[1] = STAT[1] + 1
-                    i=i+1
-                    continue
-            B = E
+            B = T * B
             S_epi.set_pos(i)
+            B_proj = orthogonal_projections(B, i+1, k-1, S_epi) # Matrix of size (k-1-i, n)
+            s=0
+            while((LEE.WtLeeVec(B_proj[s]) == 0) and (s<k-2-i)):
+                s=s+1
+            if (s>0):
+                B.swap_rows(i+1, i+1+s)
+            print("Profile after swap:")
+            print(ell_profile(B, lee=True))
             if i == 0:
-                i += 1 # prevent double calculation for first block
+                i += 1 # prevent the first block to be double reduced
             else:
                 i = max(0, i-beta+1)
         else:

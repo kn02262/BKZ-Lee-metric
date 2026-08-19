@@ -13,9 +13,8 @@ parser.add_argument("-b", required=True, type=int, default=0, help='Beta block s
 parser.add_argument("-s", required=True, type=int, default=10, help='Number of samples')
 parser.add_argument("-n", required=True, type=int, default=0, help='Length of the code')
 parser.add_argument("--seed", dest="seed", required=False, type=int, default=0, help="Random seed: default is 0=do not set")
-parser.add_argument("--ignore_potential_growth", dest="ignore_potential_growth", required=False, action=argparse.BooleanOptionalAction, default=False, help="Ignore potential function growth in LLL")
 parser.add_argument("--verbose", dest="verbose", required=False, action=argparse.BooleanOptionalAction, default=False, help="Verbose output, print raw data")
-parser.add_argument("--algorithm", dest="algorithm", required=False, type=int, default=0, help="Algorithm: 0=Classic BKZ, 1=Classic bkz, selecting lower LeeWt Vec., 2=bkz with minimum_lee_wt_codeword+primitive, 3=LeeBKZ, minimum_lee_wt_codeword may be non-primitive")
+parser.add_argument("--algorithm", dest="algorithm", required=False, type=int, default=0, help="Algorithm: 0=Classic BKZ, 1=Classic bkz, selecting lower LeeWt Vec., 2=bkz with minimum_lee_wt_codeword+primitive, 3=LeeBKZ, minimum_lee_wt_codeword may be non-primitive, 4=LeeLLL")
 
 args = parser.parse_args()
 beta = args.b
@@ -27,7 +26,7 @@ elif args.algorithm == 1:
     alg_caption_string = "\n--- BKZ with beta=" + str(beta) + ", selecting lowest lee wt. vec ---"
 elif args.algorithm == 2:
     alg_caption_string = "\n--- LeeBKZ with beta=" + str(beta) + ", bkz with minimum_lee_wt_codeword+primitive ---"
-elif args.algorithm == 3:
+elif (args.algorithm == 3 or args.algorithm == 4):
     alg_caption_string = "\n--- LeeBKZ with beta=" + str(beta) + ", bkz with minimum_lee_wt_codeword (may be non-primitive) ---"
 else:
     print("ERROR: Invalid algorithm selected, run LeeBKZ.sage --help")
@@ -78,9 +77,11 @@ for s in range(samples):
     if (args.algorithm == 0) or (args.algorithm == 1):
         B_red=bkz(B, beta, args.algorithm, verbose=args.verbose, STAT=STAT)
     elif (args.algorithm == 2):
-        B_red=LEEbkz(B, beta, primitive=True, verbose=args.verbose, ignore_potential=args.ignore_potential_growth, STAT=STAT)
+        B_red=LEEbkz(B, beta, primitive=True, verbose=args.verbose, STAT=STAT)
     elif (args.algorithm == 3):
-        B_red=LEEbkz(B, beta, primitive=False, verbose=args.verbose, ignore_potential=args.ignore_potential_growth, STAT=STAT)
+        B_red=LEEbkz(B, beta, primitive=False, verbose=args.verbose, STAT=STAT)
+    elif (args.algorithm == 4):
+        B_red=LEELLL(B, beta, verbose=args.verbose, STAT=STAT)
     T.append(time.time()-t)
     B_red_profile = ell_profile(B_red)
     B_red_profile_lee = ell_profile(B_red, lee=True)

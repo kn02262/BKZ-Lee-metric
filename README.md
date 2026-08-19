@@ -24,13 +24,12 @@ options:
   -s S                  Number of samples
   -n N                  Length of the code
   --seed SEED           Random seed: default is 0=do not set
-  --ignore_potential_growth, --no-ignore_potential_growth
-                        Ignore potential function growth in LLL
   --verbose, --no-verbose
                         Verbose output, print raw data
   --algorithm ALGORITHM
                         Algorithm: 0=Classic BKZ, 1=Classic bkz, selecting lower LeeWt Vec., 2=bkz with
                         minimum_lee_wt_codeword+primitive, 3=LeeBKZ, minimum_lee_wt_codeword may be non-primitive
+                        4=LeeLLL, LeeBKZ with no potential growth
 
 Script generates -s samples of random (full-rank) matrices of size $k \times n$ over finite field $F_q$ with $k = n/2$.
 
@@ -40,6 +39,7 @@ Matrices are being BKZ-reduced (with block size -b) in 4 modes (select with --al
 2. HammingBKZ + Least Lee-weight codeword selection.
 3. LeeBKZ + Proper bases.
 4. LeeBKZ.
+5. LeeLLL = LeeBKZ for block size beta=2, polynomial complexity.
 
 For selected mode the script computes mean value of the found low Lee-weight codewords.
 
