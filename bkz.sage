@@ -307,7 +307,7 @@ def LEELLL(B, beta, verbose=True, STAT=[0,0]):
 
         p = MW_Codeword_LEE(B_proj, primitive=False)
         STAT[0] = STAT[0]+1
-        B_epi = epipodal_matrix(B)
+        B_epi = epipodal_matrix(B, partial=i+2)
         li = LEE.WtLeeVec(B_epi[i])
         li1 = LEE.WtLeeVec(B_epi[i+1])
         if (LEE.WtLeeVec(B_proj[0]) > LEE.WtLeeVec(p) or LEE.WtLeeVec(B_proj[0]) == 0) and (LEE.WtLeeVec(p) > 0):
@@ -416,11 +416,12 @@ def epipodal_matrix(B, partial=None):
         return epipodal_matrix_np_bitwise(B, partial)
     Bp = []
     p = vector([0 for x in range(B.ncols())])
-    for i in range(B.nrows()):
-        if B.base_ring() == GF(2):
-            Bp.append(proj_orthogonal_vector(p, B[i]))
-        else:
-            Bp.append(proj_orthogonal_vector_q(p, B[i]))
+    if partial == None:
+        s = B.nrows()
+    else:
+        s = min(B.nrows(), partial)
+    for i in range(s):
+        Bp.append(proj_orthogonal_vector_q(p, B[i]))
         p = or_vector(p, B[i])
     return matrix(Bp)
 
