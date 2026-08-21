@@ -375,8 +375,6 @@ def LEEbkz(B, beta, primitive=False, verbose=True, STAT=[0,0]):
                 s=s+1
             if (s>0):
                 B.swap_rows(i+1, i+1+s)
-            print("Profile after swap:")
-            print(ell_profile(B, lee=True))
             if i == 0:
                 i += 1 # prevent the first block to be double reduced
             else:

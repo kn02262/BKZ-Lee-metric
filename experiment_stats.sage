@@ -7,8 +7,8 @@ def parse_ln(ln):
 			ln_list.append(F(s))
 	return ln_list
 
-q=127
-b=3
+q=7
+b=2
 H=[]
 L=[]
 T=[]
@@ -70,7 +70,7 @@ for n in n_list:
 	MW_Calls_row.append(mwc[0])
 	f.close()
 
-	# Algorithm 3
+	# Algorithm 3 (LeeBKZ)
 	stat_file = "experiments_q" + str(q) + "/LeeBKZ_q" + str(q) + "_b" + str(b) + "_n" + str(n) + "_3.out" # LeeBKZ
 	f = open(stat_file, "r")
 	ln=''
@@ -87,9 +87,9 @@ for n in n_list:
 	MW_Calls_row.append(mwc[0])
 	f.close()
 
-	# Algorithm 3 (No potential check)
+	# Algorithm 3 (LLL)
 	if b==2:
-		stat_file = "experiments_q" + str(q) + "/LeeBKZ_q" + str(q) + "_b" + str(b) + "_n" + str(n) + "_3_NO_POTENTIAL_CHECK.out" # Hamming BKZ selecting lowest Lee wt.
+		stat_file = "experiments_q" + str(q) + "/LeeBKZ_q" + str(q) + "_b" + str(b) + "_n" + str(n) + "_LLL.out"
 		f = open(stat_file, "r")
 		ln=''
 		while 'Reduced basis' not in ln:
@@ -112,14 +112,31 @@ for n in n_list:
 
 # Output stats to terminal
 print(f"q={q}, b={b}")
-print("Lee:")
+print("n | Alg0 | Alg1 | Alg2 | Alg3 (LeeBKZ) | Alg3 (LeeLLL, only for beta=2)")
+print("Lee reduction quality (ell_1 in LEE Profile):")
 i=0
 for n in n_list:
+	print(f"n={n} ", end="")
 	print(*L[i])
 	i=i+1
 
-print("Hamming:")
+print("Hamming reduction quality (ell_1 in Hamming Profile):")
 i=0
 for n in n_list:
+	print(f"n={n} ", end="")
 	print(*H[i])
+	i=i+1
+
+print("Number of MinimumWeightCodeword() calls:")
+i=0
+for n in n_list:
+	print(f"n={n} ", end="")
+	print(*MW_Calls[i])
+	i=i+1
+
+print("Operation time, s.:")
+i=0
+for n in n_list:
+	print(f"n={n} ", end="")
+	print(*T[i])
 	i=i+1
