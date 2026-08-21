@@ -46,6 +46,7 @@ wtH0 = [] # B[0].hamming_wt (proper basis)
 wtL0 = [] # B[0].lee_wt (proper basis)
 wtH = [] # B[0].hamming_wt (reduced basis)
 wtL = [] # B[0].lee_wt (reduced basis)
+K1 = [] # B.k_1 (reduced basis)
 T = []
 MCalls = []
 l1_fix_fails = []
@@ -93,6 +94,7 @@ for s in range(samples):
     wtL.append(WtLeeVec(B_red[0]))
     MCalls.append(STAT[0])
     l1_fix_fails.append(STAT[1])
+    K1.append(get_k1(B_red_profile_lee))
 
 
 print("\n\n****************************************************")
@@ -101,6 +103,7 @@ print("****************************************************")
 print(f"Reduced {samples} matrices of size {k}x{n} over F{q}")
 print(f"Proper basis wtH[0]={numpy.mean(wtH0)} wtL[0]={numpy.mean(wtL0)}")
 print(f"Reduced basis wtH[0]={numpy.mean(wtH)} wtL[0]={numpy.mean(wtL)}")
+print(f"Reduced basis avg. k1={numpy.mean(K1)}")
 print(f"Avg.time={numpy.mean(T)}")
 print(f"Avg.Mw_codeword.calls={numpy.mean(MCalls)}")
 if beta == 2:

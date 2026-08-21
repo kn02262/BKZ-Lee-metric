@@ -45,7 +45,7 @@ endif
 $(info Python include: $(PYTHON_INCLUDE))
 $(info Sage include: $(SAGE_INCLUDES))
 
-CC=gcc -shared -pthread -fPIC -fwrapv -g -O2 -Wall -fno-strict-aliasing \
+CC=gcc -shared -pthread -fPIC -fwrapv -O3 -Wall -fno-strict-aliasing \
 	   -I$(PYTHON_INCLUDE) \
 	   $(PYTHON_SITE_PACKAGES_INCLUDE) \
 	   $(SAGE_INCLUDES)

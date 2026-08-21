@@ -355,9 +355,6 @@ def LEEbkz(B, beta, primitive=False, verbose=True, STAT=[0,0]):
 
         p = MW_Codeword_LEE(B_proj, primitive=primitive)
         STAT[0] = STAT[0]+1
-        B_epi = epipodal_matrix(B)
-        li = LEE.WtLeeVec(B_epi[i])
-        li1 = LEE.WtLeeVec(B_epi[i+1])
         if (LEE.WtLeeVec(B_proj[0]) > LEE.WtLeeVec(p)) and (LEE.WtLeeVec(p) > 0):
             lprint(verbose, f"i = {i}, new Lee weight: {LEE.WtLeeVec(p)}", flush=True)
             if i == 0:

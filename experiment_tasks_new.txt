@@ -76,5 +76,9 @@ sage LeeBKZ.sage -q 127 -b 3 -s 10 -n 128 --algorithm=3 --seed=3 > experiments_q
 sage LeeBKZ.sage -q 127 -b 3 -s 10 -n 256 --algorithm=3 --seed=4 > experiments_q127/LeeBKZ_q127_b3_n256_3.out
 sage LeeBKZ.sage -q 127 -b 3 -s 10 -n 512 --algorithm=3 --seed=5 > experiments_q127/LeeBKZ_q127_b3_n512_3.out
 sage LeeBKZ.sage -q 127 -b 3 -s 10 -n 1024 --algorithm=3 --seed=6 > experiments_q127/LeeBKZ_q127_b3_n1024_3.out
+sage LeeBKZ.sage -q 7 -b 5 -s 10 -n 1024 --algorithm=3 --seed=6 > experiments_q7/LeeBKZ_q7_b5_n1024_3.out
 sage LeeBKZ.sage -q 7 -b 6 -s 10 -n 1024 --algorithm=3 --seed=6 > experiments_q7/LeeBKZ_q7_b6_n1024_3.out
+sage LeeBKZ.sage -q 7 -b 7 -s 10 -n 1024 --algorithm=3 --seed=6 > experiments_q7/LeeBKZ_q7_b7_n1024_3.out
+sage LeeBKZ.sage -q 11 -b 4 -s 10 -n 1024 --algorithm=3 --seed=6 > experiments_q7/LeeBKZ_q11_b4_n1024_3.out
+sage LeeBKZ.sage -q 11 -b 5 -s 10 -n 1024 --algorithm=3 --seed=6 > experiments_q7/LeeBKZ_q11_b5_n1024_3.out
 sage LeeBKZ.sage -q 7 -b 8 -s 10 -n 1024 --algorithm=3 --seed=6 > experiments_q7/LeeBKZ_q7_b8_n1024_3.out
