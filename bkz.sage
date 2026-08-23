@@ -247,7 +247,11 @@ def MW_Codeword_LEE(B, primitive=False):
         p = zero_vector(F, B.ncols())
     else:
         C=LEE.LinearLeeMetricCode(B)
-        p = C.minimum_lee_weight_codeword_fast(primitive=primitive)
+        #p = C.minimum_lee_weight_codeword_fast(primitive=primitive)
+        if primitive == True:
+            p = C.minimum_lee_weight_codeword_fast(primitive=primitive)
+        else:
+            p = C.minimum_lee_weight_codeword_c()
     return p
 
 
@@ -353,7 +357,11 @@ def LEEbkz(B, beta, primitive=False, verbose=True, STAT=[0,0]):
             i = detect_tail_LEE(B, i, verbose=verbose)
             continue
 
+        t = walltime()
         p = MW_Codeword_LEE(B_proj, primitive=primitive)
+        #print(f"p = {p}")
+        print(f"[LEEbkz:MW_Codeword_LEE:{walltime()-t} sec.]")
+
         STAT[0] = STAT[0]+1
         if (LEE.WtLeeVec(B_proj[0]) > LEE.WtLeeVec(p)) and (LEE.WtLeeVec(p) > 0):
             lprint(verbose, f"i = {i}, new Lee weight: {LEE.WtLeeVec(p)}", flush=True)

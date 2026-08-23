@@ -4,6 +4,9 @@ from sage.coding.linear_code_no_metric import AbstractLinearCodeNoMetric
 from sage.coding.linear_code import LinearCodeGeneratorMatrixEncoder
 from sage.coding.decoder import Decoder
 
+import mwc_lee
+import numpy as np
+
 class AbstractLinearLeeMetricCode(AbstractLinearCodeNoMetric):
     def __init__(self, base_field, length, default_encoder_name, default_decoder_name, basis=None):
         self._generic_constructor = LinearLeeMetricCode
@@ -188,7 +191,50 @@ class LinearLeeMetricCode(AbstractLinearLeeMetricCode):
                 res.append(lc[ptr])
                 ptr = ptr + 1
         return vector(res)
-        
+
+    def minimum_lee_weight_codeword_c(self):
+        r"""
+        TODO: rewrite
+        Return the codeword of minimum Lee weight of ``self``.
+        If minHw==True, additionally selects the codeword with possibly less Hamming weight
+        If primitive=True, returns only primitive codeword
+
+        This algorithm simply iterates over all the elements of the code and
+        returns the codeword of minimum weight.
+            
+        """
+        B=self.generator_matrix()
+        zero_pos = []
+        Bn=B.ncols()
+        for j in range(Bn):
+            col = B.column(j)
+            if col.is_zero():
+                zero_pos.append(j)
+        B=B.delete_columns(zero_pos)
+
+        B_np = np.array(B.rows(), dtype=np.int16)
+        q = B.base_ring().cardinality()
+
+        weight, codeword = mwc_lee.find_min_weight(B_np, q)
+
+        #print(f"q = {q}")
+        #print(f"weight = {weight}")
+        #print(f"codeword = {codeword}")
+
+        res = []
+        ptr = 0
+        for i in range(Bn):
+            if i in zero_pos:
+                res.append(0)
+            else:
+                res.append(codeword[ptr])
+                ptr = ptr + 1
+
+        #print(f"res = {res}")
+        #H = self.parity_check_matrix()
+        #assert (H * vector(res)).is_zero()
+
+        return vector(GF(q), res)
         
     def _repr_(self):
         R = self.base_field()

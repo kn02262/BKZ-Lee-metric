@@ -1,0 +1,10 @@
+__pycache__
+*.sage.py
+*.pyx
+LEE.c
+LEE.so
+bkz.c
+bkz.so
+libmwc_lee.so
+sepi.c
+sepi.so
