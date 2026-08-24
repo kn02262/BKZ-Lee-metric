@@ -8,3 +8,5 @@ bkz.so
 libmwc_lee.so
 sepi.c
 sepi.so
+mwc_lee_avx2.so
+mwc_lee_avx512.so

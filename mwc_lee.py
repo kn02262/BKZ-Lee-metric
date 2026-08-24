@@ -4,15 +4,12 @@ import sys
 import numpy as np
 
 # Bind and find the path configurations for compiling/loading the .so/.dll shared library
-_lib_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'libmwc_lee.so'))
-
+_lib_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'mwc_lee_avx512.so'))
 if not os.path.exists(_lib_path):
-    print("Compiling library file `mwc_lee.c`...")
-    # Compile execution step using system terminal utilities (Linux / MacOS standard)
-    compile_cmd = f"gcc -O3 -mavx2 -shared -fPIC mwc_lee.c -o {_lib_path}"
-    status = os.system(compile_cmd)
-    if status != 0:
-        raise RuntimeError("Failed to compile mwc_lee.c. Ensure gcc is available and supports -mavx2.")
+    _lib_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'mwc_lee_avx2.so'))
+
+#_lib_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'mwc_lee_avx2.so'))
+#_lib_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'mwc_lee_avx512.so'))
 
 # Load ctypes handle mappings
 _lib = ctypes.CDLL(_lib_path)

@@ -252,6 +252,8 @@ def MW_Codeword_LEE(B, primitive=False):
             p = C.minimum_lee_weight_codeword_fast(primitive=primitive)
         else:
             p = C.minimum_lee_weight_codeword_c()
+            #p_ref = C.minimum_lee_weight_codeword_fast(primitive=False)
+            #assert LEE.WtLeeVec(p) == LEE.WtLeeVec(p_ref)
     return p
 
 
@@ -355,6 +357,10 @@ def LEEbkz(B, beta, primitive=False, verbose=True, STAT=[0,0]):
 
         if LEE.WtLeeVec(B_proj[0]) == 1:
             i = detect_tail_LEE(B, i, verbose=verbose)
+            #t = walltime()
+            #B = LEELLL(B, 2, verbose=False)
+            #print(f"[LEEbkz:postprocess:LEELLL:{walltime()-t} sec.]")
+            #print(f"profile (after p.p.): {ell_profile(B, lee=True)}")
             continue
 
         t = walltime()
@@ -401,7 +407,8 @@ def detect_tail_LEE(B, i, verbose=False):
     k = B.nrows()
     t = walltime()
     B_epi = epipodal_matrix(B)
-    lprint(verbose, f"[detect_tail:epipodal_matrix:{walltime()-t} sec.]")
+    lprint(verbose, f"[detect_tail:lee:epipodal_matrix:{walltime()-t} sec.]")
+    #print(f"profile = {ell_profile(B, lee=True)}")
     while i <= k - 1 and LEE.WtLeeVec(B_epi[i]) <= 1:
         i += 1
     return i

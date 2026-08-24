@@ -51,7 +51,7 @@ CC=gcc -shared -pthread -fPIC -fwrapv -O3 -Wall -fno-strict-aliasing \
 	   $(SAGE_INCLUDES)
 
 all: \
-LEE.so sepi.so bkz.so
+LEE.so sepi.so bkz.so mwc_lee_avx2.so mwc_lee_avx512.so
 
 LEE.so: LEE.c
 	$(CC) -o LEE.so LEE.c
@@ -89,8 +89,15 @@ bkz.pyx: bkz.sage.py
 bkz.sage.py: bkz.sage
 	$(SAGE) --preparse bkz.sage
 
+mwc_lee_avx2.so:
+	$(CC) -mavx2 mwc_lee_avx2.c -o mwc_lee_avx2.so
+
+mwc_lee_avx512.so:
+	$(CC) -mavx512f -mavx512bw -mavx512vl mwc_lee_avx512.c -o mwc_lee_avx512.so
+
 clean:
 	rm -f LEE.so LEE.c LEE.pyx
 	rm -f sepi.so sepi.c sepi.pyx
 	rm -f bkz.so bkz.c bkz.pyx
 	rm -f *.sage.py
+	rm -f mwc_lee_avx2.so mwc_lee_avx512.so
