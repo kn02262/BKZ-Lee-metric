@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdalign.h>
 
 // Для AVX-512 выравнивание должно быть 64 байта
 #define ALIGN 64
