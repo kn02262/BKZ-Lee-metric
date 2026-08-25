@@ -363,10 +363,10 @@ def LEEbkz(B, beta, primitive=False, verbose=True, STAT=[0,0]):
             #print(f"profile (after p.p.): {ell_profile(B, lee=True)}")
             continue
 
-        t = walltime()
+        #t = walltime()
         p = MW_Codeword_LEE(B_proj, primitive=primitive)
         #print(f"p = {p}")
-        print(f"[LEEbkz:MW_Codeword_LEE:{walltime()-t} sec.]")
+        #print(f"[LEEbkz:MW_Codeword_LEE:{walltime()-t} sec.]")
 
         STAT[0] = STAT[0]+1
         if (LEE.WtLeeVec(B_proj[0]) > LEE.WtLeeVec(p)) and (LEE.WtLeeVec(p) > 0):
