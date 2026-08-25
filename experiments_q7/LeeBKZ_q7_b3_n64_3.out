@@ -6,10 +6,23 @@ Lee profile: [67, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 B[0].wtH=33, B[0].wtL=67
 
 --- LeeBKZ with beta=3, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-Hamming profile after BKZ: [25, 7, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-Lee profile after BKZ: [41, 10, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-25<=B_red[0].wtL<=75
-B_red[0].wtH=25, B_red[0].wtL=41
+[LEEbkz:MW_Codeword_LEE:0.005670785903930664 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001241445541381836 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0016169548034667969 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010783672332763672 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010974407196044922 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0014197826385498047 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001055002212524414 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009658336639404297 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0007348060607910156 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010800361633300781 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009827613830566406 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0008456707000732422 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010848045349121094 sec.]
+Hamming profile after BKZ: [26, 6, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [42, 10, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+26<=B_red[0].wtL<=78
+B_red[0].wtH=26, B_red[0].wtL=42
 
 Hamming profile: [28, 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 Lee profile: [50, 13, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
@@ -17,6 +30,21 @@ Lee profile: [50, 13, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
 B[0].wtH=28, B[0].wtL=50
 
 --- LeeBKZ with beta=3, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+[LEEbkz:MW_Codeword_LEE:0.001592397689819336 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010294914245605469 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0013701915740966797 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009860992431640625 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009515285491943359 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0015325546264648438 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011510848999023438 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0013756752014160156 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001024007797241211 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009636878967285156 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0015070438385009766 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011510848999023438 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009849071502685547 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0012295246124267578 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009720325469970703 sec.]
 Hamming profile after BKZ: [25, 8, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 Lee profile after BKZ: [44, 11, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 25<=B_red[0].wtL<=75
@@ -28,6 +56,34 @@ Lee profile: [58, 8, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 B[0].wtH=29, B[0].wtL=58
 
 --- LeeBKZ with beta=3, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+[LEEbkz:MW_Codeword_LEE:0.0014376640319824219 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010771751403808594 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0013699531555175781 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0012049674987792969 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009810924530029297 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0013594627380371094 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010669231414794922 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009660720825195312 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009415149688720703 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0013840198516845703 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0014870166778564453 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001112222671508789 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001003265380859375 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0013685226440429688 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010771751403808594 sec.]
+[LEEbkz:MW_Codeword_LEE:0.000993967056274414 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009510517120361328 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010793209075927734 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009570121765136719 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0013468265533447266 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001108407974243164 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009641647338867188 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0007340908050537109 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0012340545654296875 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009608268737792969 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0007457733154296875 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009856224060058594 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0007610321044921875 sec.]
 Hamming profile after BKZ: [22, 9, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 Lee profile after BKZ: [38, 10, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 22<=B_red[0].wtL<=66
@@ -39,6 +95,19 @@ Lee profile: [56, 7, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 B[0].wtH=30, B[0].wtL=56
 
 --- LeeBKZ with beta=3, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+[LEEbkz:MW_Codeword_LEE:0.0014188289642333984 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0012166500091552734 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001373291015625 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010783672332763672 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0014033317565917969 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010273456573486328 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011074542999267578 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0013704299926757812 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011792182922363281 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009834766387939453 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0007421970367431641 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010509490966796875 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009405612945556641 sec.]
 Hamming profile after BKZ: [26, 7, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 Lee profile after BKZ: [41, 8, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 26<=B_red[0].wtL<=78
@@ -50,10 +119,35 @@ Lee profile: [61, 4, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 B[0].wtH=29, B[0].wtL=61
 
 --- LeeBKZ with beta=3, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-Hamming profile after BKZ: [24, 9, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-Lee profile after BKZ: [39, 9, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-24<=B_red[0].wtL<=72
-B_red[0].wtH=24, B_red[0].wtL=39
+[LEEbkz:MW_Codeword_LEE:0.0015106201171875 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0013051033020019531 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0014824867248535156 sec.]
+[LEEbkz:MW_Codeword_LEE:0.00115203857421875 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009975433349609375 sec.]
+[LEEbkz:MW_Codeword_LEE:0.00141143798828125 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010859966278076172 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009713172912597656 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009529590606689453 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011191368103027344 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001489877700805664 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011990070343017578 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0015079975128173828 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001184701919555664 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010097026824951172 sec.]
+[LEEbkz:MW_Codeword_LEE:0.00148773193359375 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011181831359863281 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009856224060058594 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009562969207763672 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011172294616699219 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009679794311523438 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009477138519287109 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0007445812225341797 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010297298431396484 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009930133819580078 sec.]
+Hamming profile after BKZ: [22, 10, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [37, 14, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+22<=B_red[0].wtL<=66
+B_red[0].wtH=22, B_red[0].wtL=37
 
 Hamming profile: [30, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 Lee profile: [58, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
@@ -61,6 +155,17 @@ Lee profile: [58, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 B[0].wtH=30, B[0].wtL=58
 
 --- LeeBKZ with beta=3, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+[LEEbkz:MW_Codeword_LEE:0.0015134811401367188 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0012400150299072266 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0014946460723876953 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011415481567382812 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010755062103271484 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0014903545379638672 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010879039764404297 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009684562683105469 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0007460117340087891 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010759830474853516 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009608268737792969 sec.]
 Hamming profile after BKZ: [26, 7, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 Lee profile after BKZ: [45, 9, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 26<=B_red[0].wtL<=78
@@ -72,10 +177,27 @@ Lee profile: [59, 14, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
 B[0].wtH=28, B[0].wtL=59
 
 --- LeeBKZ with beta=3, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-Hamming profile after BKZ: [25, 6, 5, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-Lee profile after BKZ: [43, 10, 5, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+[LEEbkz:MW_Codeword_LEE:0.0014731884002685547 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011625289916992188 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0014700889587402344 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001070261001586914 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009715557098388672 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0013642311096191406 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011589527130126953 sec.]
+[LEEbkz:MW_Codeword_LEE:0.00142669677734375 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001100301742553711 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009694099426269531 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009424686431884766 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010929107666015625 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009586811065673828 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009367465972900391 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0007369518280029297 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009849071502685547 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009522438049316406 sec.]
+Hamming profile after BKZ: [25, 7, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [40, 9, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 25<=B_red[0].wtL<=75
-B_red[0].wtH=25, B_red[0].wtL=43
+B_red[0].wtH=25, B_red[0].wtL=40
 
 Hamming profile: [31, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 Lee profile: [56, 4, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
@@ -83,6 +205,23 @@ Lee profile: [56, 4, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 B[0].wtH=31, B[0].wtL=56
 
 --- LeeBKZ with beta=3, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+[LEEbkz:MW_Codeword_LEE:0.0014793872833251953 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010917186737060547 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0014274120330810547 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010519027709960938 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009694099426269531 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0013833045959472656 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0012922286987304688 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0014138221740722656 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010759830474853516 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009665489196777344 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0013773441314697266 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001068115234375 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009653568267822266 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011484622955322266 sec.]
+[LEEbkz:MW_Codeword_LEE:0.00106048583984375 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009703636169433594 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009489059448242188 sec.]
 Hamming profile after BKZ: [25, 7, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 Lee profile after BKZ: [43, 8, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 25<=B_red[0].wtL<=75
@@ -94,8 +233,17 @@ Lee profile: [64, 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 B[0].wtH=30, B[0].wtL=64
 
 --- LeeBKZ with beta=3, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-Hamming profile after BKZ: [30, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-Lee profile after BKZ: [45, 5, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+[LEEbkz:MW_Codeword_LEE:0.001466989517211914 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001050710678100586 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0014102458953857422 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009870529174804688 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0007479190826416016 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001405954360961914 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010097026824951172 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0007882118225097656 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010502338409423828 sec.]
+Hamming profile after BKZ: [30, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [45, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 30<=B_red[0].wtL<=90
 B_red[0].wtH=30, B_red[0].wtL=45
 
@@ -105,6 +253,40 @@ Lee profile: [54, 10, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
 B[0].wtH=26, B[0].wtL=54
 
 --- LeeBKZ with beta=3, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
+[LEEbkz:MW_Codeword_LEE:0.0015075206756591797 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011169910430908203 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0014655590057373047 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010712146759033203 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009620189666748047 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0014142990112304688 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011379718780517578 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0014646053314208984 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010693073272705078 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009512901306152344 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0015614032745361328 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010466575622558594 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0013763904571533203 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001049041748046875 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009770393371582031 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009641647338867188 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001169443130493164 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0014462471008300781 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001134634017944336 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001043558120727539 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0016176700592041016 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011217594146728516 sec.]
+[LEEbkz:MW_Codeword_LEE:0.001032114028930664 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010409355163574219 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011510848999023438 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010540485382080078 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009722709655761719 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010616779327392578 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011115074157714844 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010218620300292969 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009980201721191406 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0011034011840820312 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0010600090026855469 sec.]
+[LEEbkz:MW_Codeword_LEE:0.0009968280792236328 sec.]
 Hamming profile after BKZ: [24, 6, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 Lee profile after BKZ: [35, 8, 6, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 24<=B_red[0].wtL<=72
@@ -116,6 +298,7 @@ B_red[0].wtH=24, B_red[0].wtL=35
 ****************************************************
 Reduced 10 matrices of size 32x64 over F7
 Proper basis wtH[0]=29.4 wtL[0]=58.3
-Reduced basis wtH[0]=25.2 wtL[0]=41.4
-Avg.time=0.41923377513885496
-Avg.Mw_codeword.calls=16.2
+Reduced basis wtH[0]=25.1 wtL[0]=41.0
+Reduced basis avg. k1=3.4
+Avg.time=0.12547721862792968
+Avg.Mw_codeword.calls=18.2

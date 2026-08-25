@@ -18,7 +18,7 @@ B[0].wtH=16, B[0].wtL=30
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
 Hamming profile after BKZ: [14, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-Lee profile after BKZ: [19, 7, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [19, 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 14<=B_red[0].wtL<=42
 B_red[0].wtH=14, B_red[0].wtL=19
 
@@ -117,6 +117,7 @@ B_red[0].wtH=16, B_red[0].wtL=26
 Reduced 10 matrices of size 16x32 over F7
 Proper basis wtH[0]=14.8 wtL[0]=28.2
 Reduced basis wtH[0]=14.6 wtL[0]=23.3
-Avg.time=0.034287881851196286
+Reduced basis avg. k1=2.3
+Avg.time=0.024379849433898926
 Avg.Mw_codeword.calls=3.5
 Avg.potential_growth_fails=0.7
