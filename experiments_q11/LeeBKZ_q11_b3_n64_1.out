@@ -117,5 +117,6 @@ B_red[0].wtH=26, B_red[0].wtL=71
 Reduced 10 matrices of size 32x64 over F11
 Proper basis wtH[0]=29.8 wtL[0]=87.0
 Reduced basis wtH[0]=25.7 wtL[0]=64.8
-Avg.time=0.3085766315460205
+Reduced basis avg. k1=3.8
+Avg.time=0.3984289884567261
 Avg.Mw_codeword.calls=9.7
