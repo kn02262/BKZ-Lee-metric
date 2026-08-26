@@ -8,7 +8,7 @@ def parse_ln(ln):
 	return ln_list
 
 q=7
-b=2
+b=3
 H=[]
 L=[]
 T=[]
@@ -28,6 +28,7 @@ for n in n_list:
 	red_basis = re.findall(r"[-+]?(?:\d*\.*\d+)", ln)
 	H_row.append(red_basis[1])
 	L_row.append(red_basis[3])
+	f.readline() # k1
 	ln=f.readline() # Avg.time
 	time = re.findall(r"[-+]?(?:\d*\.*\d+)", ln)
 	T_row.append(time[0])
@@ -45,6 +46,7 @@ for n in n_list:
 	red_basis = re.findall(r"[-+]?(?:\d*\.*\d+)", ln)
 	H_row.append(red_basis[1])
 	L_row.append(red_basis[3])
+	f.readline() # k1
 	ln=f.readline() # Avg.time
 	time = re.findall(r"[-+]?(?:\d*\.*\d+)", ln)
 	T_row.append(time[0])
@@ -62,6 +64,7 @@ for n in n_list:
 	red_basis = re.findall(r"[-+]?(?:\d*\.*\d+)", ln)
 	H_row.append(red_basis[1])
 	L_row.append(red_basis[3])
+	f.readline() # k1
 	ln=f.readline() # Avg.time
 	time = re.findall(r"[-+]?(?:\d*\.*\d+)", ln)
 	T_row.append(time[0])
@@ -79,6 +82,7 @@ for n in n_list:
 	red_basis = re.findall(r"[-+]?(?:\d*\.*\d+)", ln)
 	H_row.append(red_basis[1])
 	L_row.append(red_basis[3])
+	f.readline() # k1
 	ln=f.readline() # Avg.time
 	time = re.findall(r"[-+]?(?:\d*\.*\d+)", ln)
 	T_row.append(time[0])
@@ -97,6 +101,7 @@ for n in n_list:
 		red_basis = re.findall(r"[-+]?(?:\d*\.*\d+)", ln)
 		H_row.append(red_basis[1])
 		L_row.append(red_basis[3])
+		f.readline() # k1
 		ln=f.readline() # Avg.time
 		time = re.findall(r"[-+]?(?:\d*\.*\d+)", ln)
 		T_row.append(time[0])
