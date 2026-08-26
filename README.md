@@ -15,9 +15,10 @@ usage:
 > LeeBKZ.sage.py [-h] -q Q -b B -s S -n N [--seed SEED] [--ignore_potential_growth | --no-ignore_potential_growth]
                       [--verbose | --no-verbose] [--algorithm ALGORITHM]
 
-This script compares efficiency of different BKZ modes for codes over F_q
+This script compares efficiency of different BKZ modes for codes over $F_q$.
 
-options:
+Options:
+```
   -h, --help            show this help message and exit
   -q Q                  Finite field cardinality, prime
   -b B                  Beta block size in BKZ
@@ -30,6 +31,7 @@ options:
                         Algorithm: 0=Classic BKZ, 1=Classic bkz, selecting lower LeeWt Vec., 2=bkz with
                         minimum_lee_wt_codeword+primitive, 3=LeeBKZ, minimum_lee_wt_codeword may be non-primitive
                         4=LeeLLL, LeeBKZ with no potential growth
+```
 
 Script generates -s samples of random (full-rank) matrices of size $k \times n$ over finite field $F_q$ with $k = n/2$.
 
