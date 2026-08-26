@@ -4,13 +4,11 @@
 #include <string.h>
 #include <stdalign.h>
 
-// Для AVX-512 выравнивание должно быть 64 байта
 #define ALIGN 64
 
-// Оптимизированный подсчет веса Ли с использованием AVX-512
 uint32_t compute_lee_weight_simd(const int16_t *codeword, size_t n, int16_t q) {
     __m512i vq = _mm512_set1_epi16(q);
-    __m512i vsum = _mm512_setzero_si512(); // ИСПРАВЛЕНО c si256 на si512
+    __m512i vsum = _mm512_setzero_si512();
     
     size_t i = 0;
     for (; i + 32 <= n; i += 32) {
@@ -44,11 +42,9 @@ void vec_add_mod_simd(int16_t *res, const int16_t *a, const int16_t *b, size_t n
         __m512i va = _mm512_load_si512((const __m512i *)(a + i));
         __m512i vb = _mm512_load_si512((const __m512i *)(b + i));
         __m512i vsum = _mm512_add_epi16(va, vb);
-        
-        // В AVX-512 сравнение возвращает маску инструкций __mmask32 вместо регистра-маски
+
         __mmask32 mask = _mm512_cmpgt_epi16_mask(vsum, vthresh);
-        
-        // Вычитаем q только там, где взведены биты в маске (используем маскированное вычитание)
+
         __m512i vres = _mm512_mask_sub_epi16(vsum, mask, vsum, vq);
         
         _mm512_store_si512((__m512i *)(res + i), vres);
@@ -61,7 +57,7 @@ void vec_add_mod_simd(int16_t *res, const int16_t *a, const int16_t *b, size_t n
 
 void vec_sub_mod_simd(int16_t *res, const int16_t *a, const int16_t *b, size_t n, int16_t q) {
     __m512i vq = _mm512_set1_epi16(q);
-    __m512i vzero = _mm512_setzero_si512(); // ИСПРАВЛЕНО c si256 на si512
+    __m512i vzero = _mm512_setzero_si512();
     
     size_t i = 0;
     for (; i + 32 <= n; i += 32) {
@@ -80,9 +76,7 @@ void vec_sub_mod_simd(int16_t *res, const int16_t *a, const int16_t *b, size_t n
     }
 }
 
-// C-интерфейс для вызова из NumPy
 uint32_t find_min_weight_codeword(const int16_t *G, size_t k, size_t n, int16_t q, int16_t *best_codeword) {
-    // Выравнивание под 32 элемента (64 байта) для AVX-512
     size_t padded_n = ((n + 31) / 32) * 32;
     
     int16_t *current_codeword = (int16_t *)_mm_malloc(padded_n * sizeof(int16_t), ALIGN);

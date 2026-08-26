@@ -15,34 +15,6 @@ def matrix_weight(B):
         c += B[i].hamming_weight()
     return c
 
-def intersection_basis(S, B):
-    # Implementation of the method from Lemma 1 of the paper:
-    # Micciancio D. - Efficient reductions among lattice problems (2007)
-    #
-    S = matrix(S)
-    H = matrix(S.transpose().left_kernel().basis())
-    assert H.ncols() == B.ncols(), f"{H.ncols()} != {B.ncols()}"
-    C = H * B.transpose()
-    #C = C.stack(zero_matrix(ZZ, B.nrows() - H.nrows(), B.nrows()))
-    sD,sU,sV = C.smith_form(transformation=True)
-    assert sD == sU * C * sV
-    B_t = B.transpose() * sV
-    return B_t.transpose()[::-1,:]
-
-def intersection_basis_reduced(S, B):
-    S = matrix(S)
-    assert S.nrows() <= B.nrows()
-    B0 = intersection_basis(S, B)
-    if S.nrows() == B.nrows():
-        return B0
-    for i in range(S.nrows(), B.nrows()):
-        Bt = B0[i:]
-        C = LinearCode(Bt)
-        p = C._minimum_weight_codeword()
-        S = S.stack(matrix(p))
-        B0 = intersection_basis(S, B)
-    return B0
-
 def proper_basis(B):
     k = B.nrows()
     A = B[:,:k]
@@ -415,9 +387,6 @@ def detect_tail_LEE(B, i, verbose=False):
 
 def lll(B):
     return bkz(B, 2)
-
-def lll_v2(B):
-    return bkz_v2(B, 2)
 
 def epipodal_vector(B, i):
     # Build a proj system
