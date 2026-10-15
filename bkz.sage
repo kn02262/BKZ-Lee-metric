@@ -276,7 +276,12 @@ def LEELLL(B, beta, verbose=True, STAT=[0,0]):
     i = 0
     while i < k - 1:
         lprint(verbose, f"i = {i}", flush=True)
-        j = min(i+beta-1, k-1)
+        B_epi = epipodal_matrix(B)
+        for j in [i+1..k-1]:
+            if LEE.WtLeeVec(B_epi[j]) != 0:
+                break
+        if (j == k-1) and (B_epi[j] == 0):
+            j=i
         B_proj = orthogonal_projections(B, i, j, S_epi)
 
         if LEE.WtLeeVec(B_proj[0]) == 1:
@@ -285,29 +290,34 @@ def LEELLL(B, beta, verbose=True, STAT=[0,0]):
 
         p = MW_Codeword_LEE(B_proj, primitive=False)
         STAT[0] = STAT[0]+1
-        B_epi = epipodal_matrix(B, partial=i+2)
-        li = LEE.WtLeeVec(B_epi[i])
-        li1 = LEE.WtLeeVec(B_epi[i+1])
-        if (LEE.WtLeeVec(B_proj[0]) > LEE.WtLeeVec(p) or LEE.WtLeeVec(B_proj[0]) == 0) and (LEE.WtLeeVec(p) > 0):
+        B_epi = epipodal_matrix(B)
+
+        if (LEE.WtLeeVec(B_proj[0]) > LEE.WtLeeVec(p)) and (LEE.WtLeeVec(p) > 0):
             lprint(verbose, f"i = {i}, new Lee weight: {LEE.WtLeeVec(p)}", flush=True)
             if i == 0:
                 lprint(verbose, f"codeword = {p}", flush=True)
             A = insert_vector(B_proj, p)
             T = block_diagonal_matrix(identity_matrix(i), A, identity_matrix(k-j-1))
             E = T * B
-            E_epi = epipodal_matrix(E)
-            lip1 = LEE.WtLeeVec(E_epi[i+1])
-            if (li-LEE.WtLeeVec(E_epi[i])+li1-lip1 < 1): # lip1 = LEE.WtLeeVec(epipodal_vector(E, i+1))
+            E_epi = epipodal_matrix(E, partial=j+1)
+            phi=0
+            for m in [i..j]:
+                phi += (k-m+1)*(LEE.WtLeeVec(B_epi[m]) - LEE.WtLeeVec(E_epi[m]))
+            if (phi < 1):
                 lprint(verbose, "LLL Potential growth!")
                 STAT[1] = STAT[1] + 1
                 i=i+1
                 continue
             B = E
-            S_epi.set_pos(i)
+
+            for j in range(i,-1,-1):
+                if E_epi[j] != 0:
+                    break
+            S_epi.set_pos(j)
             if i == 0:
                 i += 1 # prevent the first block to be double reduced
             else:
-                i = max(0, i-beta+1)
+                i = j
         else:
             i += 1
     return B
