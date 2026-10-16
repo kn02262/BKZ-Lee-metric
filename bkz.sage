@@ -288,9 +288,8 @@ def LEELLL(B, beta, verbose=True, STAT=[0,0]):
             i = detect_tail_LEE(B, i, verbose=verbose)
             continue
 
-        p = MW_Codeword_LEE(B_proj, primitive=False)
+        p = MW_Codeword_LEE(Matrix(r for r in B_proj.rows() if r), primitive=False)
         STAT[0] = STAT[0]+1
-        B_epi = epipodal_matrix(B)
 
         if (LEE.WtLeeVec(B_proj[0]) > LEE.WtLeeVec(p)) and (LEE.WtLeeVec(p) > 0):
             lprint(verbose, f"i = {i}, new Lee weight: {LEE.WtLeeVec(p)}", flush=True)
