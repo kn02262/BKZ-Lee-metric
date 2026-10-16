@@ -298,10 +298,12 @@ def LEELLL(B, beta, verbose=True, STAT=[0,0]):
             A = insert_vector(B_proj, p)
             T = block_diagonal_matrix(identity_matrix(i), A, identity_matrix(k-j-1))
             E = T * B
-            E_epi = epipodal_matrix(E, partial=j+1)
+            #E_epi = epipodal_matrix(E, partial=j+1)
+            E_epi = epipodal_matrix(E)
             phi=0
             for m in [i..j]:
                 phi += (k-m+1)*(LEE.WtLeeVec(B_epi[m]) - LEE.WtLeeVec(E_epi[m]))
+            #print(f"budget={phi}")
             if (phi < 1):
                 lprint(verbose, "LLL Potential growth!")
                 STAT[1] = STAT[1] + 1
@@ -309,13 +311,20 @@ def LEELLL(B, beta, verbose=True, STAT=[0,0]):
                 continue
             B = E
 
-            for j in range(i,-1,-1):
-                if E_epi[j] != 0:
-                    break
-            S_epi.set_pos(j)
+            m=i+1
+            while((m+1 < k) and (phi > 1)):
+                if ( LEE.WtLeeVec(E_epi[m])==0 and (phi-LEE.WtLeeVec(E_epi[m+1]) >= 1)):
+                    B.swap_rows(m,m+1)
+                    phi = phi-LEE.WtLeeVec(E_epi[m+1])
+                m=m+1
+
             if i == 0:
                 i += 1 # prevent the first block to be double reduced
             else:
+                for j in range(i-1,-1,-1):
+                    if E_epi[j] != 0:
+                        break
+                S_epi.set_pos(j)
                 i = j
         else:
             i += 1
