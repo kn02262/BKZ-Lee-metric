@@ -28,6 +28,10 @@ class S_aux:
             self.i_stored = i
         else:
             raise Exception(f"Index {i} is too big, call update() first")
-    
+
+    def epipodal_vec(self, B, i):
+        self.update(B, i)
+        return bkz.proj_orthogonal_vector_q(self.S[i], B[i])
+
     def __getitem__(self, key):
         return self.S[key]

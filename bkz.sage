@@ -276,11 +276,10 @@ def LEELLL(B, beta, verbose=True, STAT=[0,0]):
     i = 0
     while i < k - 1:
         lprint(verbose, f"i = {i}", flush=True)
-        B_epi = epipodal_matrix(B)
         for j in [i+1..k-1]:
-            if LEE.WtLeeVec(B_epi[j]) != 0:
+            if LEE.WtLeeVec(S_epi.epipodal_vec(B, j)) != 0:
                 break
-        if (j == k-1) and (B_epi[j] == 0):
+        if (j == k-1) and (LEE.WtLeeVec(S_epi.epipodal_vec(B, j)) == 0):
             j=i
         B_proj = orthogonal_projections(B, i, j, S_epi)
 
@@ -298,25 +297,25 @@ def LEELLL(B, beta, verbose=True, STAT=[0,0]):
             A = insert_vector(B_proj, p)
             T = block_diagonal_matrix(identity_matrix(i), A, identity_matrix(k-j-1))
             E = T * B
-            #E_epi = epipodal_matrix(E, partial=j+1)
-            E_epi = epipodal_matrix(E)
+            E_epi = epipodal_matrix(E, partial=j+1)
+            #E_epi = epipodal_matrix(E)
             phi=0
+            S_epi.update(B, j)
             for m in [i..j]:
-                phi += (k-m+1)*(LEE.WtLeeVec(B_epi[m]) - LEE.WtLeeVec(E_epi[m]))
-            #print(f"budget={phi}")
+                phi += (k-m+1)*(LEE.WtLeeVec(S_epi.epipodal_vec(B,m)) - LEE.WtLeeVec(E_epi[m]))
+
             if (phi < 1):
                 lprint(verbose, "LLL Potential growth!")
                 STAT[1] = STAT[1] + 1
                 i=i+1
                 continue
             B = E
-
-            m=i+1
-            while((m+1 < k) and (phi > 1)):
-                if ( LEE.WtLeeVec(E_epi[m])==0 and (phi-LEE.WtLeeVec(E_epi[m+1]) >= 1)):
-                    B.swap_rows(m,m+1)
-                    phi = phi-LEE.WtLeeVec(E_epi[m+1])
-                m=m+1
+            #m=i+1
+            #while((m+1 < k) and (phi > 1)):
+            #    if ( LEE.WtLeeVec(E_epi[m])==0 and (phi-LEE.WtLeeVec(E_epi[m+1]) >= 1)):
+            #        B.swap_rows(m,m+1)
+            #        phi = phi-LEE.WtLeeVec(E_epi[m+1])
+            #    m=m+1
 
             if i == 0:
                 i += 1 # prevent the first block to be double reduced

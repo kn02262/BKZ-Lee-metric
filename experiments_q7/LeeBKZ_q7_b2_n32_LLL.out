@@ -7,7 +7,7 @@ B[0].wtH=15, B[0].wtL=30
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
 Hamming profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-Lee profile after BKZ: [27, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [27, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 16<=B_red[0].wtL<=48
 B_red[0].wtH=16, B_red[0].wtL=27
 
@@ -18,7 +18,7 @@ B[0].wtH=16, B[0].wtL=30
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
 Hamming profile after BKZ: [14, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-Lee profile after BKZ: [19, 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [19, 7, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 14<=B_red[0].wtL<=42
 B_red[0].wtH=14, B_red[0].wtL=19
 
@@ -39,10 +39,10 @@ Lee profile: [29, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 B[0].wtH=16, B[0].wtL=29
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-Hamming profile after BKZ: [16, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-Lee profile after BKZ: [29, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-16<=B_red[0].wtL<=48
-B_red[0].wtH=16, B_red[0].wtL=29
+Hamming profile after BKZ: [15, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [23, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+15<=B_red[0].wtL<=45
+B_red[0].wtH=15, B_red[0].wtL=23
 
 Hamming profile: [13, 4, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 Lee profile: [29, 7, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
@@ -50,10 +50,10 @@ Lee profile: [29, 7, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 B[0].wtH=13, B[0].wtL=29
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-Hamming profile after BKZ: [13, 4, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-Lee profile after BKZ: [21, 6, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-13<=B_red[0].wtL<=39
-B_red[0].wtH=13, B_red[0].wtL=21
+Hamming profile after BKZ: [12, 6, 0, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [18, 9, 0, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+12<=B_red[0].wtL<=36
+B_red[0].wtH=12, B_red[0].wtL=18
 
 Hamming profile: [14, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 Lee profile: [21, 5, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
@@ -62,7 +62,7 @@ B[0].wtH=14, B[0].wtL=21
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
 Hamming profile after BKZ: [14, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-Lee profile after BKZ: [21, 5, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [21, 4, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 14<=B_red[0].wtL<=42
 B_red[0].wtH=14, B_red[0].wtL=21
 
@@ -73,7 +73,7 @@ B[0].wtH=15, B[0].wtL=29
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
 Hamming profile after BKZ: [15, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-Lee profile after BKZ: [23, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [23, 7, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 15<=B_red[0].wtL<=45
 B_red[0].wtH=15, B_red[0].wtL=23
 
@@ -94,10 +94,10 @@ Lee profile: [28, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 B[0].wtH=15, B[0].wtL=28
 
 --- LeeBKZ with beta=2, bkz with minimum_lee_wt_codeword (may be non-primitive) ---
-Hamming profile after BKZ: [15, 4, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-Lee profile after BKZ: [20, 4, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-15<=B_red[0].wtL<=45
-B_red[0].wtH=15, B_red[0].wtL=20
+Hamming profile after BKZ: [14, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Lee profile after BKZ: [21, 7, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+14<=B_red[0].wtL<=42
+B_red[0].wtH=14, B_red[0].wtL=21
 
 Hamming profile: [15, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 Lee profile: [29, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
@@ -116,8 +116,8 @@ B_red[0].wtH=16, B_red[0].wtL=26
 ****************************************************
 Reduced 10 matrices of size 16x32 over F7
 Proper basis wtH[0]=14.8 wtL[0]=28.2
-Reduced basis wtH[0]=14.6 wtL[0]=23.3
+Reduced basis wtH[0]=14.3 wtL[0]=22.5
 Reduced basis avg. k1=2.3
-Avg.time=0.024379849433898926
-Avg.Mw_codeword.calls=3.5
-Avg.potential_growth_fails=0.7
+Avg.time=0.024326896667480467
+Avg.Mw_codeword.calls=5.0
+Avg.potential_growth_fails=0.8
