@@ -275,19 +275,19 @@ def LEELLL(B, beta, verbose=True, STAT=[0,0]):
     S_epi = sepi.S_aux(B)
     i = 0
     while i < k - 1:
-        lprint(verbose, f"i = {i}", flush=True)
         for j in [i+1..k-1]:
             if LEE.WtLeeVec(S_epi.epipodal_vec(B, j)) != 0:
                 break
         if (j == k-1) and (LEE.WtLeeVec(S_epi.epipodal_vec(B, j)) == 0):
             j=i
+        lprint(verbose, f"i = {i} j={j}", flush=True)
         B_proj = orthogonal_projections(B, i, j, S_epi)
 
         if LEE.WtLeeVec(B_proj[0]) == 1:
             i = detect_tail_LEE(B, i, verbose=verbose)
             continue
 
-        p = MW_Codeword_LEE(Matrix(r for r in B_proj.rows() if r), primitive=False)
+        p = MW_Codeword_LEE(Matrix([B_proj[0], B_proj[-1]]), primitive=False)
         STAT[0] = STAT[0]+1
 
         if (LEE.WtLeeVec(B_proj[0]) > LEE.WtLeeVec(p)) and (LEE.WtLeeVec(p) > 0):
@@ -318,6 +318,7 @@ def LEELLL(B, beta, verbose=True, STAT=[0,0]):
             #    m=m+1
 
             if i == 0:
+                S_epi.set_pos(0)
                 i += 1 # prevent the first block to be double reduced
             else:
                 for j in range(i-1,-1,-1):
